@@ -1,2 +1,7 @@
 <h1>hello</h1>
 <%= link_to"New Post",posts_new_path %>
+
+ <% @post.each do |item| %>
+ <p><%= item.title %></p>
+ <p><%= item.body %> </p>
+<% end %>
